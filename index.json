@@ -8,7 +8,7 @@
       "title": "프로세스와 스레드",
       "category": "운영체제",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/process-and-thread.md",
       "image": {
         "src": "images/process-and-thread.png",
@@ -31,7 +31,7 @@
       "title": "경쟁 상태와 원자성",
       "category": "운영체제",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/race-condition.md",
       "image": {
         "src": "images/race-condition.png",
@@ -54,7 +54,7 @@
       "title": "교착 상태와 락 획득 순서",
       "category": "운영체제",
       "difficulty": "intermediate",
-      "status": "draft",
+      "status": "published",
       "file": "questions/deadlock.md",
       "image": {
         "src": "images/deadlock.png",
@@ -77,7 +77,7 @@
       "title": "TCP의 3-way handshake",
       "category": "네트워크",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/tcp-three-way-handshake.md",
       "image": {
         "src": "images/tcp-three-way-handshake.png",
@@ -100,7 +100,7 @@
       "title": "DNS 조회와 캐시",
       "category": "네트워크",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/dns-resolution.md",
       "image": {
         "src": "images/dns-resolution.png",
@@ -123,7 +123,7 @@
       "title": "HTTP 캐시와 304 응답",
       "category": "네트워크",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/http-cache-validation.md",
       "image": {
         "src": "images/http-cache-validation.png",
@@ -146,7 +146,7 @@
       "title": "B-tree 인덱스와 조회 비용",
       "category": "데이터베이스",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/database-btree-index.md",
       "image": {
         "src": "images/database-btree-index.png",
@@ -169,7 +169,7 @@
       "title": "트랜잭션 격리 수준과 스냅샷",
       "category": "데이터베이스",
       "difficulty": "intermediate",
-      "status": "draft",
+      "status": "published",
       "file": "questions/transaction-isolation.md",
       "image": {
         "src": "images/transaction-isolation.png",
@@ -192,7 +192,7 @@
       "title": "스택과 큐의 처리 순서",
       "category": "자료구조",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/stack-and-queue.md",
       "image": {
         "src": "images/stack-and-queue.png",
@@ -215,7 +215,7 @@
       "title": "해시 테이블과 충돌",
       "category": "자료구조",
       "difficulty": "beginner",
-      "status": "draft",
+      "status": "published",
       "file": "questions/hash-table-collision.md",
       "image": {
         "src": "images/hash-table-collision.png",

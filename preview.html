@@ -1,7 +1,7 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>만듦 · CS 예시 10선</title><style>
 :root{color-scheme:light;font-family:'Malgun Gothic',sans-serif;color:#172b35;background:#f4f7f7}*{box-sizing:border-box}body{margin:0}header,main{max-width:1040px;margin:auto;padding:48px 28px}header{padding-bottom:0}.eyebrow,.meta{color:#087f73;font-size:14px;font-weight:700;letter-spacing:.03em}h1{font-size:44px;letter-spacing:-2px;margin:20px 0}header p{color:#5c7079;line-height:1.9}nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:28px 0}nav a{padding:13px 18px;border:1px solid #d8e5e0;border-radius:10px;background:white;text-decoration:none}a{color:#087f73;overflow-wrap:anywhere}article{background:white;border:1px solid #e0e9e8;border-radius:20px;padding:42px;margin-bottom:32px;scroll-margin:20px}h2{font-size:29px;line-height:1.55;letter-spacing:-.8px}h3{font-size:20px;margin:30px 0 16px}h4{font-size:18px;margin:28px 0 12px}p,li{font-size:17px;line-height:1.95;word-break:keep-all;overflow-wrap:anywhere}.answer{padding:4px 24px 12px;background:#eef7f3;border-radius:14px}.answer h3{color:#087f73}figure{margin:28px 0}img{width:100%;height:auto;border-radius:12px;display:block}code{background:#edf1f4;padding:2px 6px;border-radius:4px;font-size:.9em}.files{display:flex;flex-wrap:wrap;gap:20px;border-top:1px solid #e1e8e8;padding-top:24px;margin-top:30px;font-size:14px}.files a{text-decoration:none}@media(max-width:640px){header,main{padding:26px 16px}h1{font-size:32px}nav{grid-template-columns:1fr}article{padding:24px 18px}h2{font-size:23px}p,li{font-size:16px}.answer{padding:1px 16px 8px}}
-</style></head><body><header id="top"><div class="eyebrow">MANDEUM / DAILY CS</div><h1>하루 한 질문, CS 예시 10선</h1><p>질문 · 핵심 답변 · 해설 · 이미지 생성 모델로 만든 쉬운 비유 그림<br>질문마다 이미지 1장씩, 최대 2장 원칙으로 구성했습니다.<br>2026년 10월 8~17일은 예시 일정이며, 모든 항목은 초안입니다. 실제 발송이나 만듦 연동은 수행하지 않았습니다.</p><nav><a href="#process-and-thread">01 프로세스와 스레드</a><a href="#race-condition">02 경쟁 상태와 원자성</a><a href="#deadlock">03 교착 상태와 락 획득 순서</a><a href="#tcp-three-way-handshake">04 TCP의 3-way handshake</a><a href="#dns-resolution">05 DNS 조회와 캐시</a><a href="#http-cache-validation">06 HTTP 캐시와 304 응답</a><a href="#database-btree-index">07 B-tree 인덱스와 조회 비용</a><a href="#transaction-isolation">08 트랜잭션 격리 수준과 스냅샷</a><a href="#stack-and-queue">09 스택과 큐의 처리 순서</a><a href="#hash-table-collision">10 해시 테이블과 충돌</a></nav></header><main><article id="process-and-thread">
-    <div class="meta">01 / 운영체제 · 예시 날짜 2026-10-08 · 초안</div>
+</style></head><body><header id="top"><div class="eyebrow">MANDEUM / DAILY CS</div><h1>하루 한 질문, CS 예시 10선</h1><p>질문 · 핵심 답변 · 해설 · 이미지 생성 모델로 만든 쉬운 비유 그림<br>질문마다 이미지 1장씩, 최대 2장 원칙으로 구성했습니다.<br>2026년 10월 8~17일은 예시 일정이며, 10개 모두 해당 날짜부터 공개되도록 게시 예약했습니다. 실제 메일 발송은 만듦의 운영 연동 이후 진행됩니다.</p><nav><a href="#process-and-thread">01 프로세스와 스레드</a><a href="#race-condition">02 경쟁 상태와 원자성</a><a href="#deadlock">03 교착 상태와 락 획득 순서</a><a href="#tcp-three-way-handshake">04 TCP의 3-way handshake</a><a href="#dns-resolution">05 DNS 조회와 캐시</a><a href="#http-cache-validation">06 HTTP 캐시와 304 응답</a><a href="#database-btree-index">07 B-tree 인덱스와 조회 비용</a><a href="#transaction-isolation">08 트랜잭션 격리 수준과 스냅샷</a><a href="#stack-and-queue">09 스택과 큐의 처리 순서</a><a href="#hash-table-collision">10 해시 테이블과 충돌</a></nav></header><main><article id="process-and-thread">
+    <div class="meta">01 / 운영체제 · 예시 날짜 2026-10-08 · 게시 예약 / 공개</div>
     <h2>프로세스와 스레드는 무엇이 다르고, 같은 프로세스의 스레드끼리는 어떤 자원을 공유하나요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>프로세스는 실행 중인 프로그램의 자원과 주소 공간을 묶는 단위이고, 스레드는 그 안에서 실행되는 흐름입니다. 같은 프로세스의 스레드는 코드·데이터·힙 등의 주소 공간을 공유하지만, 각자 실행 위치와 레지스터 상태, 스택을 가집니다.</p></section>
     <section><h3>더 알아보기</h3><h4>공간과 실행 흐름을 나누어 생각하기</h4>
@@ -16,7 +16,7 @@
 <ul><li><a href="https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads" target="_blank" rel="noopener noreferrer">Microsoft Learn — About Processes and Threads</a></li></ul></section>
     <div class="files"><a href="questions/process-and-thread.md">MD 원본</a><a href="images/process-and-thread.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="race-condition">
-    <div class="meta">02 / 운영체제 · 예시 날짜 2026-10-09 · 초안</div>
+    <div class="meta">02 / 운영체제 · 예시 날짜 2026-10-09 · 게시 예약 / 공개</div>
     <h2>초깃값이 0인 카운터를 두 스레드가 한 번씩 증가시켰는데 결과가 1이 될 수 있는 이유는 무엇인가요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>증가 연산이 읽기·계산·쓰기로 나뉘어 실행되고, 두 스레드가 모두 0을 읽은 뒤 각각 1을 쓰면 한 번의 증가가 사라질 수 있습니다. 이런 갱신 손실을 막으려면 읽기부터 쓰기까지를 락으로 보호하거나 적절한 원자적 증가 연산을 사용해야 합니다.</p></section>
     <section><h3>더 알아보기</h3><h4>한 줄의 코드가 한 번의 동작은 아니에요</h4>
@@ -29,7 +29,7 @@
 <ul><li><a href="https://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html" target="_blank" rel="noopener noreferrer">Oracle Java Tutorials — Thread Interference</a></li></ul></section>
     <div class="files"><a href="questions/race-condition.md">MD 원본</a><a href="images/race-condition.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="deadlock">
-    <div class="meta">03 / 운영체제 · 예시 날짜 2026-10-10 · 초안</div>
+    <div class="meta">03 / 운영체제 · 예시 날짜 2026-10-10 · 게시 예약 / 공개</div>
     <h2>스레드 A는 락 X를 가진 채 Y를 기다리고, 스레드 B는 락 Y를 가진 채 X를 기다립니다. 어떤 문제이며 어떻게 예방할 수 있나요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>서로가 가진 자원의 해제를 기다리며 진행하지 못하는 교착 상태입니다. 두 락을 사용하는 모든 코드가 X 다음 Y처럼 동일한 전역 순서로 락을 획득하도록 만들면, 이 예시의 순환 대기를 예방할 수 있습니다.</p></section>
     <section><h3>더 알아보기</h3><h4>기다림이 원을 만들 때</h4>
@@ -44,7 +44,7 @@
 <ul><li><a href="https://docs.oracle.com/javase/tutorial/essential/concurrency/deadlock.html" target="_blank" rel="noopener noreferrer">Oracle Java Tutorials — Deadlock</a></li></ul></section>
     <div class="files"><a href="questions/deadlock.md">MD 원본</a><a href="images/deadlock.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="tcp-three-way-handshake">
-    <div class="meta">04 / 네트워크 · 예시 날짜 2026-10-11 · 초안</div>
+    <div class="meta">04 / 네트워크 · 예시 날짜 2026-10-11 · 게시 예약 / 공개</div>
     <h2>일반적인 TCP 연결 시작 과정에서 SYN, SYN-ACK, ACK를 교환하는 이유는 무엇인가요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>양쪽이 연결 상태를 만들고 서로의 초기 시퀀스 번호를 확인하기 위해서입니다. 클라이언트가 SYN으로 자신의 번호를 알리고, 서버가 SYN-ACK으로 이를 확인하면서 자신의 번호를 알리면, 클라이언트가 마지막 ACK로 서버의 번호를 확인합니다.</p></section>
     <section><h3>더 알아보기</h3><h4>두 방향의 시작점을 맞추기</h4>
@@ -59,7 +59,7 @@
 <ul><li><a href="https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5" target="_blank" rel="noopener noreferrer">IETF RFC 9293 — TCP, Establishing a Connection</a></li></ul></section>
     <div class="files"><a href="questions/tcp-three-way-handshake.md">MD 원본</a><a href="images/tcp-three-way-handshake.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="dns-resolution">
-    <div class="meta">05 / 네트워크 · 예시 날짜 2026-10-12 · 초안</div>
+    <div class="meta">05 / 네트워크 · 예시 날짜 2026-10-12 · 게시 예약 / 공개</div>
     <h2>브라우저에서 도메인 이름에 해당하는 IP 주소를 찾을 때 DNS는 어떤 역할을 하며, 매번 루트 서버까지 조회하나요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>DNS는 도메인 이름에 연결된 레코드를 찾는 시스템입니다. IP 주소 조회에는 보통 A 또는 AAAA 레코드를 사용합니다. 캐시가 유효하면 저장된 결과를 사용할 수 있어, 매번 루트·최상위 도메인·권한 서버를 모두 방문하지는 않습니다.</p></section>
     <section><h3>더 알아보기</h3><h4>캐시가 없다고 가정하면</h4>
@@ -74,7 +74,7 @@
 <ul><li><a href="https://www.rfc-editor.org/rfc/rfc1034.html" target="_blank" rel="noopener noreferrer">IETF RFC 1034 — Domain Names: Concepts and Facilities</a></li></ul></section>
     <div class="files"><a href="questions/dns-resolution.md">MD 원본</a><a href="images/dns-resolution.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="http-cache-validation">
-    <div class="meta">06 / 네트워크 · 예시 날짜 2026-10-13 · 초안</div>
+    <div class="meta">06 / 네트워크 · 예시 날짜 2026-10-13 · 게시 예약 / 공개</div>
     <h2>브라우저가 저장한 HTTP 응답의 유효 시간이 지났을 때, ETag와 304 응답은 어떻게 본문 재전송을 줄이나요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>브라우저는 저장한 ETag를 If-None-Match 조건에 넣어 서버에 재검증을 요청할 수 있습니다. 리소스가 바뀌지 않았다면 서버는 본문 없는 304 Not Modified로 응답하고, 브라우저는 저장한 본문을 재사용합니다. 바뀌었다면 새 본문이 담긴 200 응답 등을 받습니다.</p></section>
     <section><h3>더 알아보기</h3><h4>캐시 적중과 재검증은 달라요</h4>
@@ -89,7 +89,7 @@
 <ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching" target="_blank" rel="noopener noreferrer">MDN — HTTP caching</a></li></ul></section>
     <div class="files"><a href="questions/http-cache-validation.md">MD 원본</a><a href="images/http-cache-validation.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="database-btree-index">
-    <div class="meta">07 / 데이터베이스 · 예시 날짜 2026-10-14 · 초안</div>
+    <div class="meta">07 / 데이터베이스 · 예시 날짜 2026-10-14 · 게시 예약 / 공개</div>
     <h2>데이터베이스의 B-tree 인덱스는 검색을 어떻게 돕고, 모든 열에 인덱스를 만들면 안 되는 이유는 무엇인가요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>B-tree 인덱스는 키를 정렬된 구조로 관리해 동등 조건이나 범위 조건에 맞는 위치를 찾는 데 도움을 줍니다. 하지만 별도의 저장 공간이 필요하고 데이터 변경 시 인덱스도 관리해야 합니다. 조회 조건과 데이터 분포에 따라 이득이 달라져 모든 열에 만드는 것이 최선은 아닙니다.</p></section>
     <section><h3>더 알아보기</h3><h4>필요한 범위를 좁히기</h4>
@@ -104,7 +104,7 @@
 <ul><li><a href="https://www.postgresql.org/docs/current/indexes-types.html#INDEXES-TYPES-BTREE" target="_blank" rel="noopener noreferrer">PostgreSQL — Index Types: B-Tree</a></li></ul></section>
     <div class="files"><a href="questions/database-btree-index.md">MD 원본</a><a href="images/database-btree-index.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="transaction-isolation">
-    <div class="meta">08 / 데이터베이스 · 예시 날짜 2026-10-15 · 초안</div>
+    <div class="meta">08 / 데이터베이스 · 예시 날짜 2026-10-15 · 게시 예약 / 공개</div>
     <h2>PostgreSQL에서 같은 트랜잭션이 동일한 값을 두 번 조회할 때, Read Committed와 Repeatable Read는 어떤 차이가 있나요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>Read Committed에서는 각 명령이 시작할 때의 스냅샷을 사용하므로 두 조회 사이에 다른 트랜잭션이 커밋한 변경이 두 번째 조회에 보일 수 있습니다. Repeatable Read에서는 첫 일반 명령 시점의 스냅샷을 유지하므로, 자신의 변경이 없는 일반 SELECT는 같은 기존 값을 봅니다.</p></section>
     <section><h3>더 알아보기</h3><h4>100을 읽고 다시 읽는 사이</h4>
@@ -119,7 +119,7 @@
 <ul><li><a href="https://www.postgresql.org/docs/current/transaction-iso.html" target="_blank" rel="noopener noreferrer">PostgreSQL — Transaction Isolation</a></li></ul></section>
     <div class="files"><a href="questions/transaction-isolation.md">MD 원본</a><a href="images/transaction-isolation.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="stack-and-queue">
-    <div class="meta">09 / 자료구조 · 예시 날짜 2026-10-16 · 초안</div>
+    <div class="meta">09 / 자료구조 · 예시 날짜 2026-10-16 · 게시 예약 / 공개</div>
     <h2>A, B, C를 순서대로 넣은 스택과 FIFO 큐에서 원소를 모두 꺼내면 각각 어떤 순서가 되나요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>스택은 마지막에 넣은 원소부터 꺼내는 LIFO 구조이므로 C, B, A 순서입니다. FIFO 큐는 먼저 넣은 원소부터 꺼내므로 A, B, C 순서입니다. 두 구조의 핵심 차이는 원소를 넣고 꺼내는 순서 규칙입니다.</p></section>
     <section><h3>더 알아보기</h3><h4>되돌리기와 대기열</h4>
@@ -134,7 +134,7 @@
 <ul><li><a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank" rel="noopener noreferrer">Python Tutorial — Using Lists as Stacks and Queues</a></li></ul></section>
     <div class="files"><a href="questions/stack-and-queue.md">MD 원본</a><a href="images/stack-and-queue.png">생성형 이미지 원본</a><a href="#top">처음으로 ↑</a></div>
     </article><article id="hash-table-collision">
-    <div class="meta">10 / 자료구조 · 예시 날짜 2026-10-17 · 초안</div>
+    <div class="meta">10 / 자료구조 · 예시 날짜 2026-10-17 · 게시 예약 / 공개</div>
     <h2>서로 다른 키가 해시 테이블의 같은 버킷에 배정되면 어떻게 구분하며, 조회가 항상 O(1)인가요?</h2>
     <section class="answer"><h3>짧은 답변</h3><p>같은 버킷에 배정되는 충돌은 체이닝이나 개방 주소법 등의 방법으로 처리하고, 최종적으로 키의 동등성을 비교해 원하는 항목을 찾습니다. 적절한 분산과 부하율 조건에서 평균적으로 빠른 조회를 기대하지만, 항상 O(1)이 보장되는 것은 아닙니다.</p></section>
     <section><h3>더 알아보기</h3><h4>위치를 찾은 뒤 키를 확인하기</h4>
