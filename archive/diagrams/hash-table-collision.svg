@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">해시 충돌은 키 비교로 구분합니다</title><desc id="desc">설명용 함수 h(key) = key % 4  /  체이닝으로 충돌 처리. 핵심  /  같은 버킷에 도착해도 같은 키라는 뜻은 아닙니다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="900" fill="#f4f7f7"/>
+<g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif">
+<text x="64" y="53" fill="#087f73" font-size="19" font-weight="700" text-anchor="start">만듦 / DAILY CS</text>
+<text x="1336" y="53" fill="#5c7079" font-size="19" font-weight="400" text-anchor="end">10 / 자료구조</text>
+<text x="64" y="124" fill="#172b35" font-size="44" font-weight="700" text-anchor="start">해시 충돌은 키 비교로 구분합니다</text>
+<text x="64" y="172" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">설명용 함수 h(key) = key % 4  /  체이닝으로 충돌 처리</text>
+<rect x="44" y="210" width="1312" height="515" rx="24" fill="#ffffff" stroke="#e0e9e8" stroke-width="2"/>
+<rect x="44" y="754" width="1312" height="90" rx="18" fill="#e2f0eb" stroke="none" stroke-width="2"/>
+<text x="74" y="808" fill="#087f73" font-size="25" font-weight="700" text-anchor="start">핵심  /  같은 버킷에 도착해도 같은 키라는 뜻은 아닙니다.</text>
+<text x="64" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="start">MANDEUM  ·  직접 제작한 학습용 개념도</text>
+<text x="1336" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="end">세부 조건과 참고 문서는 본문에서 확인하세요.</text>
+<rect x="93" y="293" width="300" height="100" rx="14" fill="#e7f3ed" stroke="#d4e2e0" stroke-width="2"/>
+<text x="117" y="335" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">키 5 → 나머지 1</text>
+<rect x="93" y="469" width="300" height="100" rx="14" fill="#edf2fc" stroke="#d4e2e0" stroke-width="2"/>
+<text x="117" y="511" fill="#3566b8" font-size="27" font-weight="700" text-anchor="start">키 9 → 나머지 1</text>
+<rect x="530" y="260" width="210" height="79" rx="14" fill="#f1f5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="635" y="310" fill="#5c7079" font-size="27" font-weight="400" text-anchor="middle">버킷 0</text>
+<rect x="530" y="361" width="210" height="79" rx="14" fill="#def0e7" stroke="#d4e2e0" stroke-width="2"/>
+<text x="635" y="411" fill="#087f73" font-size="27" font-weight="700" text-anchor="middle">버킷 1</text>
+<rect x="530" y="462" width="210" height="79" rx="14" fill="#f1f5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="635" y="512" fill="#5c7079" font-size="27" font-weight="400" text-anchor="middle">버킷 2</text>
+<rect x="530" y="563" width="210" height="79" rx="14" fill="#f1f5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="635" y="613" fill="#5c7079" font-size="27" font-weight="400" text-anchor="middle">버킷 3</text>
+<line x1="396" y1="344" x2="523" y2="393" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="396" y1="520" x2="523" y2="415" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="748" y1="400" x2="816" y2="400" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="825" y="358" width="205" height="106" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="849" y="400" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">키 5</text>
+<text x="849" y="440" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">값 A</text>
+<line x1="1038" y1="410" x2="1102" y2="410" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="1110" y="358" width="205" height="106" rx="14" fill="#edf2fc" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1134" y="400" fill="#3566b8" font-size="27" font-weight="700" text-anchor="start">키 9</text>
+<text x="1134" y="440" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">값 B</text>
+<text x="825" y="556" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">조회할 키가 9라면?</text>
+<text x="825" y="598" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">키 5와 다름 → 다음 항목</text>
+<text x="825" y="640" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">키 9와 같음 → 값 B 반환</text>
+</g></svg>

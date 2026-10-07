@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">프로세스는 공간, 스레드는 실행 흐름</title><desc id="desc">공유하는 자원과 따로 유지하는 실행 상태를 구분해 보세요.. 핵심  /  같은 프로세스의 스레드는 주소 공간을 공유합니다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="900" fill="#f4f7f7"/>
+<g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif">
+<text x="64" y="53" fill="#087f73" font-size="19" font-weight="700" text-anchor="start">만듦 / DAILY CS</text>
+<text x="1336" y="53" fill="#5c7079" font-size="19" font-weight="400" text-anchor="end">01 / 운영체제</text>
+<text x="64" y="124" fill="#172b35" font-size="44" font-weight="700" text-anchor="start">프로세스는 공간, 스레드는 실행 흐름</text>
+<text x="64" y="172" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">공유하는 자원과 따로 유지하는 실행 상태를 구분해 보세요.</text>
+<rect x="44" y="210" width="1312" height="515" rx="24" fill="#ffffff" stroke="#e0e9e8" stroke-width="2"/>
+<rect x="44" y="754" width="1312" height="90" rx="18" fill="#e2f0eb" stroke="none" stroke-width="2"/>
+<text x="74" y="808" fill="#087f73" font-size="25" font-weight="700" text-anchor="start">핵심  /  같은 프로세스의 스레드는 주소 공간을 공유합니다.</text>
+<text x="64" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="start">MANDEUM  ·  직접 제작한 학습용 개념도</text>
+<text x="1336" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="end">세부 조건과 참고 문서는 본문에서 확인하세요.</text>
+<rect x="84" y="250" width="730" height="428" rx="14" fill="#f7fbfa" stroke="#8bbfb4" stroke-width="2"/>
+<text x="110" y="295" fill="#087f73" font-size="29" font-weight="700" text-anchor="start">프로세스 A · 하나의 주소 공간</text>
+<rect x="110" y="320" width="676" height="106" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="134" y="362" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">코드 · 데이터 · 힙</text>
+<text x="134" y="402" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">두 스레드가 함께 사용하는 자원</text>
+<rect x="110" y="474" width="315" height="152" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="134" y="516" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">스레드 A1</text>
+<text x="134" y="556" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">자신의 스택</text>
+<text x="134" y="593" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">레지스터 · 실행 위치</text>
+<rect x="471" y="474" width="315" height="152" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="495" y="516" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">스레드 A2</text>
+<text x="495" y="556" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">자신의 스택</text>
+<text x="495" y="593" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">레지스터 · 실행 위치</text>
+<line x1="265" y1="473" x2="265" y2="429" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="628" y1="473" x2="628" y2="429" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="862" y="250" width="452" height="428" rx="14" fill="#f7f9fd" stroke="#a4b7d6" stroke-width="2"/>
+<text x="888" y="295" fill="#3566b8" font-size="29" font-weight="700" text-anchor="start">프로세스 B</text>
+<rect x="888" y="320" width="400" height="106" rx="14" fill="#eef3fb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="912" y="362" fill="#3566b8" font-size="27" font-weight="700" text-anchor="start">별도 주소 공간</text>
+<text x="912" y="402" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">코드 · 데이터 · 힙</text>
+<rect x="888" y="474" width="400" height="152" rx="14" fill="#eef3fb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="912" y="516" fill="#3566b8" font-size="27" font-weight="700" text-anchor="start">스레드 B1</text>
+<text x="912" y="556" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">자신의 스택</text>
+<text x="912" y="593" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">레지스터 · 실행 위치</text>
+<line x1="1088" y1="473" x2="1088" y2="429" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+</g></svg>

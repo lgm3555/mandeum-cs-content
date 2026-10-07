@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">TCP 연결의 세 번의 확인</title><desc id="desc">예시 초기 시퀀스 번호: 클라이언트 100 / 서버 500. 핵심  /  서로의 초기 시퀀스 번호를 확인해 연결 상태를 만듭니다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="900" fill="#f4f7f7"/>
+<g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif">
+<text x="64" y="53" fill="#087f73" font-size="19" font-weight="700" text-anchor="start">만듦 / DAILY CS</text>
+<text x="1336" y="53" fill="#5c7079" font-size="19" font-weight="400" text-anchor="end">04 / 네트워크</text>
+<text x="64" y="124" fill="#172b35" font-size="44" font-weight="700" text-anchor="start">TCP 연결의 세 번의 확인</text>
+<text x="64" y="172" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">예시 초기 시퀀스 번호: 클라이언트 100 / 서버 500</text>
+<rect x="44" y="210" width="1312" height="515" rx="24" fill="#ffffff" stroke="#e0e9e8" stroke-width="2"/>
+<rect x="44" y="754" width="1312" height="90" rx="18" fill="#e2f0eb" stroke="none" stroke-width="2"/>
+<text x="74" y="808" fill="#087f73" font-size="25" font-weight="700" text-anchor="start">핵심  /  서로의 초기 시퀀스 번호를 확인해 연결 상태를 만듭니다.</text>
+<text x="64" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="start">MANDEUM  ·  직접 제작한 학습용 개념도</text>
+<text x="1336" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="end">세부 조건과 참고 문서는 본문에서 확인하세요.</text>
+<rect x="180" y="242" width="240" height="65" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="300" y="286" fill="#087f73" font-size="28" font-weight="700" text-anchor="middle">클라이언트</text>
+<rect x="980" y="242" width="240" height="65" rx="14" fill="#edf2fc" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1100" y="286" fill="#3566b8" font-size="28" font-weight="700" text-anchor="middle">서버</text>
+<line x1="300" y1="308" x2="300" y2="688" stroke="#d6e1e3" stroke-width="2" stroke-dasharray="7 7"/>
+<line x1="1100" y1="308" x2="1100" y2="688" stroke="#d6e1e3" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="700" y="353" fill="#087f73" font-size="25" font-weight="700" text-anchor="middle">① SYN  ·  seq=100</text>
+<line x1="306" y1="376" x2="1094" y2="405" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="700" y="445" fill="#3566b8" font-size="25" font-weight="700" text-anchor="middle">② SYN + ACK  ·  seq=500, ack=101</text>
+<line x1="1094" y1="463" x2="306" y2="494" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="700" y="544" fill="#087f73" font-size="25" font-weight="700" text-anchor="middle">③ ACK  ·  seq=101, ack=501</text>
+<line x1="306" y1="565" x2="1094" y2="596" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="700" y="672" fill="#5c7079" font-size="22" font-weight="400" text-anchor="middle">SYN은 시퀀스 번호 1개를 소비합니다.  ·  데이터 없는 시작 예시</text>
+</g></svg>

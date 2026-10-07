@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">인덱스로 검색 범위를 좁히기</title><desc id="desc">조회 조건: 가격 ≥ 30 AND 가격 &lt; 40  /  구간 선택 개념도. 핵심  /  조회 비용을 줄이는 대신 저장 공간과 변경 관리 비용이 듭니다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="900" fill="#f4f7f7"/>
+<g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif">
+<text x="64" y="53" fill="#087f73" font-size="19" font-weight="700" text-anchor="start">만듦 / DAILY CS</text>
+<text x="1336" y="53" fill="#5c7079" font-size="19" font-weight="400" text-anchor="end">07 / 데이터베이스</text>
+<text x="64" y="124" fill="#172b35" font-size="44" font-weight="700" text-anchor="start">인덱스로 검색 범위를 좁히기</text>
+<text x="64" y="172" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">조회 조건: 가격 ≥ 30 AND 가격 &lt; 40  /  구간 선택 개념도</text>
+<rect x="44" y="210" width="1312" height="515" rx="24" fill="#ffffff" stroke="#e0e9e8" stroke-width="2"/>
+<rect x="44" y="754" width="1312" height="90" rx="18" fill="#e2f0eb" stroke="none" stroke-width="2"/>
+<text x="74" y="808" fill="#087f73" font-size="25" font-weight="700" text-anchor="start">핵심  /  조회 비용을 줄이는 대신 저장 공간과 변경 관리 비용이 듭니다.</text>
+<text x="64" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="start">MANDEUM  ·  직접 제작한 학습용 개념도</text>
+<text x="1336" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="end">세부 조건과 참고 문서는 본문에서 확인하세요.</text>
+<rect x="460" y="253" width="480" height="70" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="700" y="299" fill="#087f73" font-size="28" font-weight="700" text-anchor="middle">정렬된 키로 탐색 경로 선택</text>
+<line x1="700" y1="326" x2="290" y2="417" stroke="#5c7079" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="120" y="423" width="340" height="84" rx="14" fill="#f2f5f6" stroke="#d4e2e0" stroke-width="2"/>
+<text x="290" y="475" fill="#5c7079" font-size="26" font-weight="700" text-anchor="middle">0 ≤ 가격 &lt; 20</text>
+<line x1="700" y1="326" x2="700" y2="417" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="530" y="423" width="340" height="84" rx="14" fill="#dff2e9" stroke="#d4e2e0" stroke-width="2"/>
+<text x="700" y="475" fill="#087f73" font-size="26" font-weight="700" text-anchor="middle">20 ≤ 가격 &lt; 40</text>
+<line x1="700" y1="326" x2="1110" y2="417" stroke="#5c7079" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="940" y="423" width="340" height="84" rx="14" fill="#f2f5f6" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1110" y="475" fill="#5c7079" font-size="26" font-weight="700" text-anchor="middle">40 ≤ 가격</text>
+<line x1="700" y1="511" x2="700" y2="562" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="440" y="570" width="520" height="85" rx="14" fill="#e8f4ee" stroke="#8bbfb4" stroke-width="2"/>
+<text x="700" y="604" fill="#087f73" font-size="26" font-weight="700" text-anchor="middle">해당 구간에서 30~39 검색</text>
+<text x="700" y="638" fill="#5c7079" font-size="23" font-weight="400" text-anchor="middle">필요한 데이터 행으로 접근</text>
+<text x="1095" y="613" fill="#5c7079" font-size="20" font-weight="400" text-anchor="middle">실제 노드 구조는</text>
+<text x="1095" y="644" fill="#5c7079" font-size="20" font-weight="400" text-anchor="middle">구현에 따라 다릅니다.</text>
+</g></svg>

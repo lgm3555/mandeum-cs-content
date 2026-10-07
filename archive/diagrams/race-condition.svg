@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">두 번 증가했는데, 결과는 1?</title><desc id="desc">동기화되지 않은 읽기 → 계산 → 쓰기가 겹치는 실행 순서입니다.. 핵심  /  읽기부터 쓰기까지 보호하거나 원자적 증가를 사용합니다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="900" fill="#f4f7f7"/>
+<g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif">
+<text x="64" y="53" fill="#087f73" font-size="19" font-weight="700" text-anchor="start">만듦 / DAILY CS</text>
+<text x="1336" y="53" fill="#5c7079" font-size="19" font-weight="400" text-anchor="end">02 / 운영체제</text>
+<text x="64" y="124" fill="#172b35" font-size="44" font-weight="700" text-anchor="start">두 번 증가했는데, 결과는 1?</text>
+<text x="64" y="172" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">동기화되지 않은 읽기 → 계산 → 쓰기가 겹치는 실행 순서입니다.</text>
+<rect x="44" y="210" width="1312" height="515" rx="24" fill="#ffffff" stroke="#e0e9e8" stroke-width="2"/>
+<rect x="44" y="754" width="1312" height="90" rx="18" fill="#e2f0eb" stroke="none" stroke-width="2"/>
+<text x="74" y="808" fill="#087f73" font-size="25" font-weight="700" text-anchor="start">핵심  /  읽기부터 쓰기까지 보호하거나 원자적 증가를 사용합니다.</text>
+<text x="64" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="start">MANDEUM  ·  직접 제작한 학습용 개념도</text>
+<text x="1336" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="end">세부 조건과 참고 문서는 본문에서 확인하세요.</text>
+<text x="143" y="265" fill="#5c7079" font-size="22" font-weight="700" text-anchor="start">시간 ↓</text>
+<text x="455" y="265" fill="#087f73" font-size="28" font-weight="700" text-anchor="middle">스레드 A</text>
+<text x="930" y="265" fill="#3566b8" font-size="28" font-weight="700" text-anchor="middle">스레드 B</text>
+<line x1="180" y1="292" x2="180" y2="664" stroke="#d6e1e3" stroke-width="2" />
+<text x="166" y="333" fill="#5c7079" font-size="23" font-weight="400" text-anchor="end">1</text>
+<line x1="210" y1="357" x2="1230" y2="357" stroke="#d6e1e3" stroke-width="2" />
+<rect x="270" y="295" width="370" height="55" rx="14" fill="#e6f3ef" stroke="#d4e2e0" stroke-width="2"/>
+<text x="455" y="331" fill="#087f73" font-size="23" font-weight="400" text-anchor="middle">0을 읽음</text>
+<text x="166" y="412" fill="#5c7079" font-size="23" font-weight="400" text-anchor="end">2</text>
+<line x1="210" y1="436" x2="1230" y2="436" stroke="#d6e1e3" stroke-width="2" />
+<rect x="745" y="374" width="370" height="55" rx="14" fill="#edf2fc" stroke="#d4e2e0" stroke-width="2"/>
+<text x="930" y="410" fill="#3566b8" font-size="23" font-weight="400" text-anchor="middle">0을 읽음</text>
+<text x="166" y="491" fill="#5c7079" font-size="23" font-weight="400" text-anchor="end">3</text>
+<line x1="210" y1="515" x2="1230" y2="515" stroke="#d6e1e3" stroke-width="2" />
+<rect x="270" y="453" width="370" height="55" rx="14" fill="#e6f3ef" stroke="#d4e2e0" stroke-width="2"/>
+<text x="455" y="489" fill="#087f73" font-size="23" font-weight="400" text-anchor="middle">0 + 1을 계산 → 1 기록</text>
+<text x="166" y="570" fill="#5c7079" font-size="23" font-weight="400" text-anchor="end">4</text>
+<line x1="210" y1="594" x2="1230" y2="594" stroke="#d6e1e3" stroke-width="2" />
+<rect x="745" y="532" width="370" height="55" rx="14" fill="#edf2fc" stroke="#d4e2e0" stroke-width="2"/>
+<text x="930" y="568" fill="#3566b8" font-size="23" font-weight="400" text-anchor="middle">0 + 1을 계산 → 1 기록</text>
+<rect x="365" y="635" width="690" height="58" rx="14" fill="#fff0e9" stroke="#e9c0af" stroke-width="2"/>
+<text x="710" y="673" fill="#bd5340" font-size="26" font-weight="700" text-anchor="middle">초깃값 0  →  기대한 값 2  /  실제 결과 1</text>
+</g></svg>

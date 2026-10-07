@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">스택과 큐: 먼저 나오는 것은?</title><desc id="desc">두 자료구조에 A → B → C 순서로 넣었습니다.. 핵심  /  스택은 최근 항목부터, FIFO 큐는 먼저 들어온 항목부터 꺼냅니다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="900" fill="#f4f7f7"/>
+<g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif">
+<text x="64" y="53" fill="#087f73" font-size="19" font-weight="700" text-anchor="start">만듦 / DAILY CS</text>
+<text x="1336" y="53" fill="#5c7079" font-size="19" font-weight="400" text-anchor="end">09 / 자료구조</text>
+<text x="64" y="124" fill="#172b35" font-size="44" font-weight="700" text-anchor="start">스택과 큐: 먼저 나오는 것은?</text>
+<text x="64" y="172" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">두 자료구조에 A → B → C 순서로 넣었습니다.</text>
+<rect x="44" y="210" width="1312" height="515" rx="24" fill="#ffffff" stroke="#e0e9e8" stroke-width="2"/>
+<rect x="44" y="754" width="1312" height="90" rx="18" fill="#e2f0eb" stroke="none" stroke-width="2"/>
+<text x="74" y="808" fill="#087f73" font-size="25" font-weight="700" text-anchor="start">핵심  /  스택은 최근 항목부터, FIFO 큐는 먼저 들어온 항목부터 꺼냅니다.</text>
+<text x="64" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="start">MANDEUM  ·  직접 제작한 학습용 개념도</text>
+<text x="1336" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="end">세부 조건과 참고 문서는 본문에서 확인하세요.</text>
+<text x="370" y="280" fill="#087f73" font-size="30" font-weight="700" text-anchor="middle">STACK · LIFO</text>
+<text x="1030" y="280" fill="#3566b8" font-size="30" font-weight="700" text-anchor="middle">QUEUE · FIFO</text>
+<line x1="700" y1="260" x2="700" y2="672" stroke="#d6e1e3" stroke-width="2" />
+<rect x="245" y="333" width="250" height="67" rx="14" fill="#e2f1eb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="370" y="378" fill="#087f73" font-size="32" font-weight="700" text-anchor="middle">C</text>
+<rect x="245" y="414" width="250" height="67" rx="14" fill="#e2f1eb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="370" y="459" fill="#087f73" font-size="32" font-weight="700" text-anchor="middle">B</text>
+<rect x="245" y="495" width="250" height="67" rx="14" fill="#e2f1eb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="370" y="540" fill="#087f73" font-size="32" font-weight="700" text-anchor="middle">A</text>
+<line x1="510" y1="366" x2="620" y2="366" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="620" y="336" fill="#087f73" font-size="21" font-weight="400" text-anchor="end">먼저 꺼냄</text>
+<rect x="824" y="378" width="112" height="100" rx="14" fill="#eaf0fb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="880" y="442" fill="#3566b8" font-size="34" font-weight="700" text-anchor="middle">A</text>
+<rect x="961" y="378" width="112" height="100" rx="14" fill="#eaf0fb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1017" y="442" fill="#3566b8" font-size="34" font-weight="700" text-anchor="middle">B</text>
+<rect x="1098" y="378" width="112" height="100" rx="14" fill="#eaf0fb" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1154" y="442" fill="#3566b8" font-size="34" font-weight="700" text-anchor="middle">C</text>
+<line x1="878" y1="488" x2="878" y2="555" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="1030" y="548" fill="#3566b8" font-size="23" font-weight="400" text-anchor="middle">A부터 꺼냄</text>
+<text x="370" y="647" fill="#087f73" font-size="28" font-weight="700" text-anchor="middle">꺼내는 순서  C → B → A</text>
+<text x="1030" y="647" fill="#3566b8" font-size="28" font-weight="700" text-anchor="middle">꺼내는 순서  A → B → C</text>
+</g></svg>

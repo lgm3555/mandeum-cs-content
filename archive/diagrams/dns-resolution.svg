@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">DNS: 이름의 답을 찾아가는 과정</title><desc id="desc">필요한 캐시가 없는 경우를 단순화한 예시입니다.. 핵심  /  캐시가 유효하면 전체 조회 경로를 반복하지 않아도 됩니다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="900" fill="#f4f7f7"/>
+<g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif">
+<text x="64" y="53" fill="#087f73" font-size="19" font-weight="700" text-anchor="start">만듦 / DAILY CS</text>
+<text x="1336" y="53" fill="#5c7079" font-size="19" font-weight="400" text-anchor="end">05 / 네트워크</text>
+<text x="64" y="124" fill="#172b35" font-size="44" font-weight="700" text-anchor="start">DNS: 이름의 답을 찾아가는 과정</text>
+<text x="64" y="172" fill="#5c7079" font-size="24" font-weight="400" text-anchor="start">필요한 캐시가 없는 경우를 단순화한 예시입니다.</text>
+<rect x="44" y="210" width="1312" height="515" rx="24" fill="#ffffff" stroke="#e0e9e8" stroke-width="2"/>
+<rect x="44" y="754" width="1312" height="90" rx="18" fill="#e2f0eb" stroke="none" stroke-width="2"/>
+<text x="74" y="808" fill="#087f73" font-size="25" font-weight="700" text-anchor="start">핵심  /  캐시가 유효하면 전체 조회 경로를 반복하지 않아도 됩니다.</text>
+<text x="64" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="start">MANDEUM  ·  직접 제작한 학습용 개념도</text>
+<text x="1336" y="876" fill="#5c7079" font-size="16" font-weight="400" text-anchor="end">세부 조건과 참고 문서는 본문에서 확인하세요.</text>
+<rect x="90" y="425" width="270" height="120" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="114" y="467" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">사용자 기기</text>
+<text x="114" y="507" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">www.example.com</text>
+<rect x="485" y="388" width="300" height="180" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="509" y="430" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">재귀 리졸버</text>
+<text x="509" y="470" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">조회 수행</text>
+<text x="509" y="507" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">결과를 캐시에 보관</text>
+<line x1="366" y1="452" x2="479" y2="452" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="479" y1="525" x2="366" y2="525" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="420" y="430" fill="#087f73" font-size="20" font-weight="400" text-anchor="middle">요청</text>
+<text x="420" y="557" fill="#3566b8" font-size="20" font-weight="400" text-anchor="middle">응답</text>
+<rect x="1000" y="244" width="305" height="110" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1024" y="286" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">① 루트 DNS</text>
+<text x="1024" y="326" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">.com 담당 안내</text>
+<rect x="1000" y="416" width="305" height="110" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1024" y="458" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">② .com TLD</text>
+<text x="1024" y="498" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">권한 서버 안내</text>
+<rect x="1000" y="588" width="305" height="110" rx="14" fill="#eff5f5" stroke="#d4e2e0" stroke-width="2"/>
+<text x="1024" y="630" fill="#087f73" font-size="27" font-weight="700" text-anchor="start">③ 권한 DNS</text>
+<text x="1024" y="670" fill="#5c7079" font-size="23" font-weight="400" text-anchor="start">A / AAAA 응답</text>
+<line x1="790" y1="408" x2="992" y2="284" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="992" y1="322" x2="790" y2="442" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="790" y1="467" x2="992" y2="453" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="992" y1="490" x2="790" y2="498" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="790" y1="523" x2="992" y2="624" stroke="#087f73" stroke-width="3"  marker-end="url(#arrow)"/>
+<line x1="992" y1="662" x2="790" y2="556" stroke="#3566b8" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="505" y="650" fill="#5c7079" font-size="22" font-weight="400" text-anchor="start">초록: 문의  /  파랑: 응답</text>
+</g></svg>
