@@ -26,6 +26,10 @@ System.out.println(a.equals(b)); // true: 같은 문자열 값
 
 `HashSet`은 객체를 넣거나 찾을 때 `hashCode()`로 버킷을 먼저 고르고, 그 버킷 안에서만 `equals()`로 비교합니다. 그래서 `equals()`만 재정의하고 `hashCode()`를 그대로 두면, 같은 회원 번호의 두 객체가 서로 다른 버킷으로 가서 비교조차 되지 않을 수 있습니다.
 
+![같은 회원 번호 카드가 왼쪽에서는 서로 다른 사물함 번호를 받아 찾지 못하고, 오른쪽에서는 같은 사물함에서 번호를 대조해 찾는 비교 그림](../images/java-equals-and-hashcode.png)
+
+사물함은 버킷, 사물함 번호는 hashCode, 카드 대조는 equals에 대응하는 비유입니다. HashSet은 고른 사물함 안에서만 비교하므로, 사물함 번호가 다르면 값이 같은 회원도 찾지 못합니다.
+
 ```java
 record Member(long id) {} // record는 equals와 hashCode를 함께 생성합니다
 
