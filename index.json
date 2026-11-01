@@ -231,6 +231,21 @@
           "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/HashMap.html"
         }
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "slug": "java-equals-and-hashcode",
+      "title": "자바의 equals와 hashCode",
+      "category": "자바",
+      "difficulty": "beginner",
+      "status": "published",
+      "file": "questions/java-equals-and-hashcode.md",
+      "sources": [
+        {
+          "title": "Oracle Java — Object (equals, hashCode)",
+          "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html"
+        }
+      ]
     }
   ],
   "maxImagesPerQuestion": 2

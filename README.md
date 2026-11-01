@@ -20,6 +20,7 @@
 | 2026-10-15 | 데이터베이스 | [트랜잭션 격리 수준](questions/transaction-isolation.md) |
 | 2026-10-16 | 자료구조 | [스택과 큐](questions/stack-and-queue.md) |
 | 2026-10-17 | 자료구조 | [해시 충돌](questions/hash-table-collision.md) |
+| 2026-10-18 | 자바 | [equals와 hashCode](questions/java-equals-and-hashcode.md) |
 
 ## 파일 구성
 
