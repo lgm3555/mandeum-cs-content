@@ -231,6 +231,29 @@
           "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/HashMap.html"
         }
       ]
+    },
+    {
+      "date": "2026-11-02",
+      "slug": "java-equals-and-hashcode",
+      "title": "Java의 equals와 hashCode",
+      "category": "Java",
+      "difficulty": "beginner",
+      "status": "published",
+      "file": "questions/java-equals-and-hashcode.md",
+      "image": {
+        "src": "images/java-equals-and-hashcode.png",
+        "alt": "같은 회원 번호 카드가 왼쪽에서는 서로 다른 사물함 번호를 받아 찾지 못하고, 오른쪽에서는 같은 사물함에서 번호를 대조해 찾는 비교 그림",
+        "caption": "사물함은 버킷, 카드 대조는 equals에 대응하는 비유입니다. 그림에서는 이해를 돕기 위해 해시값으로 고른 사물함 번호를 그대로 표시했습니다. 고른 사물함 안에서만 비교하므로, 사물함이 다르면 값이 같은 회원도 찾지 못합니다.",
+        "width": 1536,
+        "height": 1024,
+        "generator": "image_gen"
+      },
+      "sources": [
+        {
+          "title": "Oracle Java — Object (equals, hashCode)",
+          "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html"
+        }
+      ]
     }
   ],
   "maxImagesPerQuestion": 2
