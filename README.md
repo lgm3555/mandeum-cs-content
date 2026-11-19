@@ -21,6 +21,16 @@
 | 2026-10-16 | 자료구조 | [스택과 큐](questions/stack-and-queue.md) |
 | 2026-10-17 | 자료구조 | [해시 충돌](questions/hash-table-collision.md) |
 | 2026-11-02 | Java | [equals와 hashCode](questions/java-equals-and-hashcode.md) |
+| 2026-11-20 | Java | [String의 불변성과 StringBuilder](questions/java-string-immutability.md) |
+| 2026-11-23 | 데이터베이스 | [데이터베이스 정규화](questions/database-normalization.md) |
+| 2026-11-24 | Java | [Java 가비지 컬렉션의 기준](questions/java-garbage-collection.md) |
+| 2026-11-25 | 데이터베이스 | [N+1 쿼리 문제](questions/database-n-plus-one.md) |
+| 2026-11-26 | Java | [Checked 예외와 Unchecked 예외](questions/java-checked-unchecked-exception.md) |
+| 2026-11-27 | 데이터베이스 | [복합 인덱스의 컬럼 순서](questions/database-composite-index-order.md) |
+| 2026-11-30 | Java | [JVM의 스택과 힙](questions/java-stack-heap-memory.md) |
+| 2026-12-01 | 데이터베이스 | [낙관적 락과 비관적 락](questions/database-optimistic-pessimistic-lock.md) |
+| 2026-12-02 | Java | [Java의 값에 의한 전달](questions/java-pass-by-value.md) |
+| 2026-12-03 | 데이터베이스 | [LEFT JOIN에서 ON과 WHERE](questions/database-left-join-on-where.md) |
 
 ## 파일 구성
 
